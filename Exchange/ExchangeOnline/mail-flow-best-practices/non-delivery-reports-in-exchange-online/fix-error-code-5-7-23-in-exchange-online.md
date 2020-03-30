@@ -42,7 +42,7 @@ To fix this issue, do the following steps:
 
 - Provision all of the domains you own. This is important as we limit the number of emails with unprovisioned domains that a tenant can send.
 
-- Add your on-premise IPs, if any, to the SPF record of any domains you send for. This would include any unprovisioned domains you might be relaying through Office 365.
+- Add your on-premises IPs, if any, to the SPF record of any domains you send for. This would include any unprovisioned domains you might be relaying through Office 365.
 
 - Verify that the outbound message wasn't identified as spam by Office 365 and routed through the [High Risk Delivery Pool](https://docs.microsoft.com/office365/SecurityCompliance/high-risk-delivery-pool-for-outbound-messages). Messages in the High Risk Delivery Pool won't pass SPF checks, and therefore won't be accepted by the destination email organization.
 
